@@ -1,0 +1,98 @@
+.popup{
+    display: none;
+    position: absolute;
+    
+    right: 0px;
+    z-index: 1000;
+    background: #FFFFFF;
+}
+.left_input{
+    float: left;
+    border-right: 1px solid #01983B;
+}
+.right_registration{
+    float: left
+}
+.registration:hover{
+    color:#2A2287;
+    
+}
+.close{
+    float: right;
+    margin-right: 15px;
+    margin-top: 15px;
+    text-decoration: none;  
+    color: #212B35;
+    font-weight: 700;
+}
+.close:hover{
+    color:#FF4B39;
+}
+.popup h2{
+    font-size:24px;
+    font-family: 'Myriad Pro';
+    color:#676E6E;
+    padding-left: 30px;
+    padding-top: 30px;
+    margin-bottom: 30px;
+    float: left;
+    text-transform: uppercase;
+}
+.popup  form{
+    padding: 30px;
+    
+}
+.popup form label{
+    float: left;
+    clear: both;
+    padding-bottom: 10px;
+    
+}
+.popup form input{
+    float: left;
+    clear: both;
+    margin-bottom: 20px;
+    
+}
+.popup form input[type=text]{
+    width: 305px;
+    padding:10px;
+    background:#F5F7F8;
+    border:2px solid #E1E7E8;
+    border-radius: 4px;
+     -webkit-border-radius:4px ;
+    -moz-border-radius:4px ;
+    -ms-border-radius:4px ;
+    -o-border-radius: 4px;
+    
+}
+.popup form input[type=password]{
+    width: 305px;
+    padding:10px;
+    background:#F5F7F8;
+    border:2px solid #E1E7E8;
+    border-radius: 4px;
+     -webkit-border-radius:4px ;
+    -moz-border-radius:4px ;
+    -ms-border-radius:4px ;
+    -o-border-radius: 4px;
+    
+}
+
+.popup form input[type=submit]{
+    color:#fff;
+    background: #008500;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    margin-bottom: 30px !important;
+    border-bottom: 1px solid #006100;
+    border-radius: 5px;
+     -webkit-border-radius:5px ;
+    -moz-border-radius:5px ;
+    -ms-border-radius:5px ;
+    -o-border-radius: 5px;
+    cursor: pointer;
+}
+.popup form input[type=submit]:hover{
+   background: #23475F; 
+}

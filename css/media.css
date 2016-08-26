@@ -1,0 +1,161 @@
+@media screen and (min-width:100px) and (max-width:429px){
+  .text_circle{width: 350px !important;}
+  .text_ring{width: 360px !important; }
+  .text_round{width: 360px !important;}   
+  .form_search input{width: 90% !important;}
+    
+}
+@media screen and (min-width:100px) and (max-width:384px){
+    .list_works ul li a img{width: 77px;height: 77px;} 
+    .first_circle{margin-left: 0px !important;}
+    .text_circle{width: 264px !important;left: -21px !important;top: 54px !important;}
+    .territory{font-size: 13px;}
+    .int{font-size:61px !important;}
+    .first_circle{width: 261px !important;   height: 261px !important;}
+    .second_circle{width: 226px !important;
+    height: 226px !important;}
+    .first_round{float: left !important;
+    margin-left: 10px !important;} 
+    .volume{font-size: 15px !important}
+    .volume_size{font-size:62px !important; }
+    .text_round{width: 250px !important;}
+    .first_ring{width: 220px !important;
+    height: 220px !important;    margin-left: 17px !important;}
+    .text_round{left: -30px !important;}
+    .second_ring{width: 190px !important;height: 190px !important;}
+    .number{font-size: 112px !important;}
+    .market{font-size: 21px !important}
+    .text_ring{top:-9px !important;left: -35px !important;width: 250px !important;}
+    .success_arithmetic h3{font-size: 36px !important;}
+    .int2{font-size: 51px;}
+    .volume_size .meters{margin-top: 21px !important;margin-left: 5px !important;}
+  
+}
+@media screen and (min-width:304px) and (max-width:337px){
+	.information_left img{display:none !important;	}
+	.information_right img{display:none !important;}
+	.information_left h3{display:none !important;}
+	.information_right h3{display:none !important;}
+	.information_left ul{top:5px !important;}
+	.information_right ul{top:0px !important;}
+	.left_answer {float:left;margin-bottom:10px;}
+	.sad_face{margin-right:2px !important;}
+	.left_answer ul li{padding-left: 74px !important;}
+	.button_footer a{font-size:14px !important;}
+}	
+@media screen and (min-width:430px) and (max-width:550px){
+  .text_circle{width: 390px !important;}
+  .text_ring{width: 392px !important; }
+  .text_round{width: 400px !important;} 
+    .list_works ul li a img{    width: 76px !important;
+    height: 76px !important;}
+    
+}
+@media screen and (min-width:511px) and (max-width:533px){
+    .list_works ul li{margin-left: 7px;}
+}
+@media screen and (min-width:551px) and (max-width:556px){
+    .text_ring{width:444px; }
+    .text_round{width: 510px;}
+}
+@media screen and (min-width:100px) and (max-width:556px){
+    .demo_wrapper{display: none;} 
+}
+@media screen and (min-width:100px) and (max-width:800px){
+    .content{background: #fff !important}
+}
+@media screen and (min-width:768px) and (max-width:991px){
+    .logotip{margin: 0 auto !important; text-align: center !important;width: 100% !important;}
+    .form_search input{width: 94% !important;}
+    
+}
+@media screen and (min-width:100px) and (max-width:991px){
+    .communication{padding: 0px 15px !important;width: 100%;}
+    .five_cooperation ul li h2{float:left;clear:both !important;}
+    .content{background: #fff !important;}
+    .demo_wrapper{width: 100% !important}
+    .logotip{width:100% !important;margin: 0 auto !important;text-align: center !important;margin-right: 0px !important }
+}
+@media screen and (min-width:768px) and (max-width:1055px){
+    .list_menu li{margin-left: 0px !important; padding-left: 0px !important;}
+}
+@media screen and (min-width:768px) and (max-width:992px){
+    .content{margin-top: 110px;}
+}
+@media screen and (min-width:1006px) and (max-width:1200px){
+    .form_search input{width: 90% !important;}
+    .list_menu >li{margin-left: 0px !important;}
+}
+
+@media screen and (min-width:635px) and (max-width:679px){
+    .first_ring{clear: both;}
+    .list_works ul li{margin-left: 10px;}
+}
+@media screen and (min-width:635px) and (max-width:679px){
+    .list_works ul li{margin-left: 24px;} 
+}
+@media screen and (min-width:680px) and (max-width:767px){
+    .first_round{float: left;clear:both;}
+    .first_ring {float: left;clear: both;}
+    .form_search input{width: 95%;}
+}
+@media screen and (min-width:100px) and (max-width:700px){
+    .logo{margin-bottom: 20px;float: left;
+    clear: both;width: 97%;}
+    .communication{padding: 0px 15px !important;margin-top: 10px;}
+    .list_menu li{display: block !important;}
+    .right_answer ul li span{width: 64%;}
+}
+@media screen and (min-width:100px) and (max-width:767px){
+    .active{border:none !important;}
+    .list_menu li a:hover{border: none !important;color:#2A2287 !important;}
+    .logotip{float: left; margin: 0 auto;text-align: center;}
+    .form_search{width: 99%;}
+    .form_search input{width: 92%}
+    .first_circle{margin-left: 50px;margin-top: 0px;}
+    .territory{font-size: 25px;}
+    volume_size,
+    .territory_size{ float: left;
+    margin-left: 29px;}
+    .text_circle{left:-65px;}
+    .first_round{margin-top: 15px;margin-left: 78px;}
+    .text_round{top: 52px;
+    left: -106px;}
+    .volume{font-size:21px;}
+    .first_ring{margin-top: -5px;
+    margin-left: 70px;margin-bottom: 10px;}
+    .text_ring{top: -24px;left: -99px;}
+    .list_works ul li{margin-bottom: 110px;}
+    .list_works ul li{margin-bottom: 110px;}
+    .title_answer{margin-top: 0px !important}
+    .five_cooperation ul li{margin-left: 0px;}
+    .five_cooperation ul li p{width: 100%}
+    .five_cooperation h3{padding-bottom: 0px;}
+    .five_cooperation ul li:last-child p{margin-bottom: 160px;}
+    .button_footer a{font-size: 20px;}
+    .five_cooperation h3{margin-bottom: 15px;}
+    .certificates h3{line-height: 1.5;}
+    .certificates p{line-height: 1.5}
+    .contacts p{width: 90%;}
+    .phone_number{width: 90% !important;}
+    .footer img{width: 90%;}
+    .logo_2{width: 90%;}
+    .year{font-size:40px;}
+    .scope_left{float: left;margin-bottom: 20px;}
+    .information_left h3{font-size: 19px;top:-8px;}
+    .information_left ul{ top: 35px;}
+    .information_left ul li{padding-right: 0px}
+    .information_right h3{font-size: 17px;top:-8px;}
+     .information_right ul{ top: 35px;}
+    .information_right ul li{padding-left: 0px}
+    .volume_size{margin-right:11px;}
+    .registration{float: none;margin-right: 0px;font-size: 13px;}
+    .communication {margin: 0 auto;text-align: center;
+    margin-top: 20px;width: 100%}
+    .communication select{float: left;margin-top: 3px;}
+    .fax{padding-left: 0px;}
+    .form_search{margin-top: 10px;}
+    .success_arithmetic{margin-top: 30px;}
+    .certificates ul li{margin-left: 0px;}
+
+}

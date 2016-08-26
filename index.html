@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Penoboard</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/media.css" rel="stylesheet" type="text/css" />
+    <link href="css/style_slider.css" rel="stylesheet" type="text/css" />
+    <link href="css/style_registration.css" rel="stylesheet" type="text/css" />
+    <link href="css/animate.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/jquery.fancybox.css" rel="stylesheet">
+
+
+    <script src="js/jquery.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBggKEZ-s15WCtwhfyHCQx3UqJvuWMc7zo&callback=initMap">
+    </script>
+    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slippry.min.js"></script>
+    <script src="js/jquery.fancybox.pack.js"></script>
+    <script src="js/animateNumber.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script type="text/javascript" src="js/my_scripts.js"></script>
+    <script type="text/javascript">
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 12,
+                center: {
+                    lat: 46.682548,
+                    lng: 32.6811792
+                }
+            });
+
+            var image = 'images/Rounded-Rectangle-2-copy.png';
+            var beachMarker = new google.maps.Marker({
+                position: {
+                    lat: 46.682548,
+                    lng: 32.6811792
+                },
+                map: map,
+                icon: image
+            });
+        }
+    </script>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="menu col-md-12">
+                    <nav class="navbar menu" role="navigation">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle button_menu" data-toggle="collapse" data-target="#example-navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <!--navbar-header  -->
+                        <div class="collapse navbar-collapse nav_menu" id="example-navbar-collapse">
+
+                            <ul class="nav navbar-nav list_menu">
+                                <li><a href="#" class="active">Главная</a></li>
+                                <li><a href="#">О компании</a></li>
+                                <li><a href="#">Вакансии</a>
+                                    <ul class="submenu">
+                                        <li><a href="#">Вакансия </a></li>
+                                        <li><a href="#">Вакансия </a></li>
+                                        <li><a href="#">Вакансия </a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Продукция</a></li>
+                                <li><a href="#">Фотогалерея</a></li>
+                                <li><a href="#">Новости</a></li>
+                                <li><a href="#">Статьи</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </div>
+                        <!--  nav_menu -->
+                    </nav>
+                    <!-- menu -->
+                </div>
+                <!-- container -->
+            </div>
+            <!-- menu -->
+        </div>
+        <!-- row -->
+    </header>
+    <!--header -->
+    <section class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 logotip wow fadeInLeft">
+                    <a href="#">
+                        <img src="images/logo.png" alt="logo" class="logo">
+                    </a>
+                    <a href="#" class="registration" rel="reg_form">вход / регистрация</a>
+                </div>
+                <div class="popup reg_form">
+                    <a class="close" href="#">&#215</a>
+                    <div class="left_input">
+                        <h2>Вход</h2>
+                        <form id="loginform" method="post" action="">
+                            <label for="login">E-mail</label>
+                            <input type="text" id="validate" name="login" />
+                            <span id="validEmail"></span>
+                            <label for="password">Пароль</label>
+                            <input type="password" name="password" />
+                            <input type="submit" value="Войти" />
+                        </form>
+                    </div>
+                    <div class="right_registration">
+
+                        <h2>Регистрация</h2>
+                        <form id="loginform1" method="post" action="">
+                            <label for="login">E-mail</label>
+                            <input type="text" id="validate1" name="login" />
+                            <span id="validEmail1"></span>
+                            <label for="password">Пароль</label>
+                            <input type="password" name="password" />
+                            <input type="submit" value="Зарегистрироваться" />
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6 communication wow fadeInRight">
+                    <select>
+                        <option>ru</option>
+                        <option>ua</option>
+                        <option>en</option>
+                    </select>
+                    <ul>
+                        <li>
+                            <a href="#" class="linkedin"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="vk"></a>
+                        </li>
+                    </ul>
+                    <span class="social">мы в социальных сетях</span>
+                    <span class="phone">тел:+38(0552)314-410, 314-403;       </span>
+                    <span class="fax"> факс:+38(0552)359-214</span>
+                    <span class="email"> e-mail:info@penoboard.com </span>
+                    <form action="" class="form_search">
+                        <input type="text">
+                        <button class="but_search"></button>
+                    </form>
+                </div>
+                <!-- communication -->
+            </div>
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-1"></div>
+                <section class="col-md-10 demo_wrapper">
+                    <article class="demo_block">
+                        <ul id="demo1">
+                            <li>
+                                <a href="#"><img src="images/1.png"></a>
+                                <div class="description_slider">
+                                    <h2>Сегодня инновация - <span>завтра необходимость </span></h2>
+                                    <h3>энергосбережение нового поколения</h3></div>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/1.png"></a>
+                                <div class="description_slider">
+                                    <h2>Сегодня инновация - <span>завтра необходимость </span></h2>
+                                    <h3>энергосбережение нового поколения</h3></div>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/1.png"></a>
+                                <div class="description_slider">
+                                    <h2>Сегодня инновация - <span>завтра необходимость </span></h2>
+                                    <h3>энергосбережение нового поколения</h3></div>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/1.png"></a>
+                                <div class="description_slider">
+                                    <h2>Сегодня инновация - <span>завтра необходимость </span></h2>
+                                    <h3>энергосбережение нового поколения</h3></div>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/1.png"></a>
+                                <div class="description_slider">
+                                    <h2>Сегодня инновация - <span>завтра необходимость </span></h2>
+                                    <h3>энергосбережение нового поколения</h3></div>
+                            </li>
+                        </ul>
+                    </article><!-- demo_block -->
+                </section><!-- demo_wrapper -->
+                <div class="col-md-1"></div>
+            </div>
+        </div>
+        <!-- container -->
+        <div class="container-fluid">
+            <div class="row arithmetic">
+                <div class="col-md-12 success_arithmetic">
+                    <div class="container">
+                        <h3>Арифметика успеха</h3>
+                        <div class="first_circle wow fadeInLeft" data-wow-offset="200">
+                            <div class="second_circle">
+                                <div class="text_circle">
+                                    <span class="territory">Территория предприятия</span>
+                                    <div class="territory_size"><span class="int">0</span> <span class="meters">м<sup>2</sup></span> </div>
+                                </div>
+                            </div>
+                            <!-- second_circle -->
+                        </div>
+                        <!-- first_circle -->
+                        <div class="first_round wow fadeInLeft" data-wow-offset="200">
+                            <div class="second_round">
+                                <div class="text_round">
+                                    <span class="volume">Годовой объем производства</span>
+                                    <div class="volume_size"><span class="int2">0</span> <span class="meters">м<sup>3</sup></span> </div>
+                                </div>
+                            </div>
+                            <!--second_round  -->
+                        </div>
+                        <!-- first-round -->
+                        <div class="first_ring wow fadeInLeft" data-wow-offset="200">
+                            <div class="second_ring">
+                                <div class="text_ring">
+                                    <span class="market">На рынке</span>
+                                    <span class="number">0</span>
+                                    <span class="year">лет</span>
+                                </div>
+                            </div>
+                            <!--second_round  -->
+                        </div>
+                        <!-- first-round -->
+                    </div>
+                    <!-- container -->
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 scope">
+                    <h3>Сфера применения</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 scope_left wow fadeInLeft" data-wow-offset="200">
+                    <img src="images/bigstock-building-under-construction-wi-19570979skycrop.png" alt="img">
+                    <div class="information_left">
+                        <h3>Гражданское cтроительство</h3>
+                        <ul>
+                            <li>Жилые дома</li>
+                            <li>Офисные здания</li>
+                            <li>Торгово-развлекательные комплексы</li>
+                        </ul>
+                        <p><img src="images/logo2.png" alt="logo"></p>
+                    </div>
+
+                </div>
+                <div class="col-md-6 scope_right wow fadeInRight" data-wow-offset="200">
+                    <img src="images/iStock_000013825372_Large.png" alt="img2">
+                    <div class="information_right">
+                        <h3>Промышленное строительство</h3>
+                        <ul>
+                            <li>Спортивные сооружения - ледовые арены</li>
+                            <li>Ангары и склады</li>
+                            <li>Заводы и фабрики</li>
+                        </ul>
+                        <p><img src="images/logo2.png" alt="logo"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 list_works wow flipInX" data-wow-offset="200">
+                    <ul>
+                        <li>
+                            <a href="#"><img src="images/Layer-14.png" alt="img"></a><span>Балконы и лоджии</span></li>
+                        <li>
+                            <a href="#"><img src="images/Layer-18-copy.png" alt="img"></a><span>Стены и фасады</span></li>
+                        <li>
+                            <a href="#"><img src="images/Layer-13-copy.png" alt="img"></a><span>Периметр дома и цоколь</span></li>
+                        <li>
+                            <a href="#"><img src="images/Layer-12-copy.png" alt="img"></a><span>Плоская и скатная кровля</span></li>
+                        <li>
+                            <a href="#"><img src="images/Layer-19-copy.png" alt="img"></a><span>Фундамент и мостики холода</span></li>
+                        <li>
+                            <a href="#"><img src="images/Layer-15-copy.png" alt="img"></a><span>Полы и потолки</span></li>
+                    </ul>
+                </div>
+                <!-- list_works -->
+            </div>
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-12 title_answer">
+                    <h3>Какие задачи решает?</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5 left_answer wow fadeInLeft" data-wow-offset="200">
+                    <ul>
+                        <li><i class="sad_face"></i><span>Потери тепла</span></li>
+                        <li><i class="sad_face"></i><span>Проникновение шума</span></li>
+                        <li><i class="sad_face"></i><span>Грибок, сырость</span></li>
+                        <li class="adjustment_first"><i class="sad_face"></i><span>Выделение вредных веществ</span></li>
+                        <li class="adjustment_second"><i class="sad_face"></i><span>Расточительность</span></li>
+                        <li class="adjustment_third"><i class="sad_face"></i><span>Пожароопасность</span></li>
+                    </ul>
+                </div>
+                <div class="col-md-7 right_answer wow fadeInRight" data-wow-offset="200">
+                    <ul>
+                        <li><i class="smiling_face"></i><span>Высокая теплоизоляция, эффективность в суровых погодных условиях.</span></li>
+                        <li><i class="smiling_face"></i><span>Индекс снижения прведенного уровня ударного шума - 25 Дб.</span></li>
+                        <li><i class="smiling_face"></i><span>Гидроизоляционные свойства. Низкие влагопоглощения - 0.1%</span></li>
+                        <li><i class="smiling_face"></i><span>Благодаря радикальной полимеризации стирола PENOBOARD не токсичен,биологически нейтрален,отвечает высоким экологическим стандартам.</span></li>
+                        <li><i class="smiling_face"></i><span>В масштабах государства - снижение энергоемкости производства и экономия традиционных ресурсов,в масштабах каждого отдельного дома - сбережение тепла и экологии помещений,снижает трат на отоплении</span></li>
+                        <li><i class="smiling_face"></i><span>Пожароопасность - Г1.PENOBOARD не поддерживает горение после прекращения контакта с открытым огнем.</span></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- row -->
+        </div>
+        <!-- container -->
+
+    </section>
+    <!-- content -->
+    <section class="cooperation">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 five_cooperation">
+                    <h3>5 причин сотрудничества</h3>
+                    <ul class="wow rotateInDownLefy" data-wow-offset="200">
+                        <li><span>1</span>
+                            <h2>Широкая дистрибьюторская сеть торговой марки.</h2>
+                            <p>Стабильно увеличивающееся производство и присущие материалу свойства обеспечили уверенность в Penoboard.Нас выбирают те,кто ценит эффуктивность и качество.</p>
+                        </li>
+                        <li><span>2</span>
+                            <h2>Эксклюзивные инновационные технологии производства.</h2>
+                            <p>Ориентир на мировые стандарты и передовые технологии.</p>
+                        </li>
+                        <li><span>3</span>
+                            <h2>Обширный ассортимент размеров плит</h2>
+                            <p>Предложения для каждого потребителя.</p>
+                        </li>
+                        <li><span>4</span>
+                            <h2>Выгодное вложение - выгодный результат.</h2>
+                            <p>Гарантированный спрос на товары торговой марки Penoboard.</p>
+                        </li>
+                        <li><span>5</span>
+                            <h2>Лучшие цены от производителся</h2>
+                            <p>Прямые поставки с завода, индивидуальные условия сотрудничества для партнеров.</p>
+                        </li>
+                    </ul>
+                    <div class="button_footer">
+                        <a href="#" class=" wow bouceInUp" data-wow-offset="200">Условия сотрудничества</a>
+                        <h3>Присоединяетесь к мировому опыту теплоизоляции!</h3>
+                    </div>
+
+                </div>
+                <!-- five_cooperation -->
+            </div>
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-12 certificates wow rotateInDownLeft" data-wow-offset="200">
+                    <img src="images/logotip.png" class="logo_2" alt="logo">
+                    <h3>Сертификаты качества И ПРЕМИИ</h3>
+                    <ul>
+                        <li>
+                            <a href="images/Layer-0.png" class="gallery2" rel="group" id="single_1"><img src="images/Layer-0.png" alt="certificate"></a>
+                        </li>
+                        <li>
+                            <a href="images/Layer-01.png" class="gallery2" rel="group" id="single_1"><img src="images/Layer-01.png" alt="certificate"></a>
+                        </li>
+                        <li>
+                            <a href="images/Layer-02.png" class="gallery2" rel="group" id="single_1"><img src="images/Layer-02.png" alt="certificate"></a>
+                        </li>
+                        <li>
+                            <a href="images/Layer-03.png" class="gallery2" rel="group" id="single_1"><img src="images/Layer-03.png" alt="certificate"> </a>
+                        </li>
+                        <li>
+                            <a href="images/Layer-04.png" class="gallery2" rel="group" id="single_1"><img src="images/Layer-04.png" alt="certificate"></a>
+                        </li>
+                    </ul>
+                    <h4>Премия:</h4>
+                    <p>100 лучших товаров Украины 2010 и 2011</p>
+                    <img src="images/logo-konkurs_top100.png" alt="img">
+
+
+                </div>
+                <!-- certificates -->
+            </div>
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-12 contacts">
+                    <h3>Контакты</h3>
+                    <p>ООО «Производственно коммерческая фирма «Элит Пласт» 73000, Украина, г.Херсон,пос.Антоновка, ул 23 Восточная, 41-А</p>
+                    <p class="phone_number">тел:+38(0552)314-410, 314-403;факс:+38(0552)359-214 e-mail:info@penoboard.com</p>
+                </div>
+            </div>
+        </div>
+        <!-- container -->
+
+    </section>
+    <!-- cooperation -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 map">
+                <div id="map"></div>
+            </div>
+            <!-- map -->
+        </div>
+        <!-- row -->
+        <div class="row">
+            <div class="col-md-12 footer wow fadeInUp">
+                <img src="images/logo_footer.png" alt="logo" class="logo_footer">
+                <p>2014 &#169</p>
+                <span>мы в социальных сетях</span>
+                <ul>
+                    <li>
+                        <a href="#" class="linkedin_footer"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="vk_footer"></a>
+                    </li>
+                </ul>
+                <img src="images/banner-(1).png" alt="banner">
+                <p class="banner_system">Баннерная система - <a href="#">100bannerov.com</a>-продвичение сайтов</p>
+                <span class="development">Разработка сайта - <a href="#">Студия Wezom</a></span>
+
+            </div>
+        </div>
+    </div>
+    <!-- container-fluid -->
+    <!-- load script -->
+    <script>
+        new WOW().init();
+    </script>
+    <script>
+        $(function() {
+            var demo1 = $("#demo1").slippry({
+                // transition: 'fade',
+                // useCSS: true,
+                // speed: 1000,
+                // pause: 3000,
+                // auto: true,
+                // preload: 'visible',
+                // autoHover: false
+            });
+        });
+    </script>
+</body>
+
+</html>
